@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&display=swap');
+body {
+  background: rgba(0,0,0,0);
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight:700;
+  user-select: none;
+}
+.the-container {
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20vw;
+  resize: vertical;
+  overflow: auto;
+  height: 60vh;
+}
+ul.form {
+  position:relative;
+  width:100%;
+  margin:auto;
+  padding:0;
+  list-style: none;
+  overflow:hidden;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow:  1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.normal-text {
+  width:100%;
+  padding-left:10px;
+  height:38px;
+  line-height:58px;
+  display:block;
+  overflow:hidden;
+  position:relative;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:12px;
+  color: #ddd;
+  background-color: #131313;
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  -o-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+  cursor: grab;
+}
+
+.form li a {
+  width:100%;
+  padding-left:10px;
+  padding-bottom: 55px;
+  height:38px;
+  line-height:58px;
+  display:block;
+  overflow:hidden;
+  position:relative;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight: lighter;
+  color: #ddd;
+  background-color: #131313;
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  -o-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+}
+
+.form li a:hover {
+  background:#333;
+  color: white;
+}
+
+.form li:first-child a:hover, .form li:first-child a {
+}
+
+.form li:last-child a:hover, .form li:last-child a {
+}
+
+.form li a:hover i {
+  color:#ea4f35;
+}
+
+.form i {
+  margin-right:15px;
+
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  -o-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+}
+
+.form em {
+  font-size: 10px;
+  background: #eb0029;
+  padding: 3px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-style: normal;
+  color: #fff;
+  margin-top: 17px;
+  margin-right: 35px;
+  line-height: 10px;
+  height: 15px;
+  float:right;
+  font-weight: bolder;
+}
+
+.form li.selected a {
+  background:#efefef;
+}
+.drag {
+  background-color: #121212;
+  min-height: 10px;
+  color: white;
+  width: 100%;
+  padding-left: 5px;
+}
+.accordion-button {
+  height: 35px !important;
+  background-color: #121212 !important;
+  color: white !important;
+}
+.accordion-body {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 60%;
+  height: 10px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin-top: 25px;
+  margin-right: 15px;
+  float: right;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  background: #eb0029; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: rgba(214, 41, 41, .5);
+}
